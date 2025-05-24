@@ -1,5 +1,17 @@
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      {/* Theme Toggle */}
+
+      {/* Background Effects */}
+
+      {/* Navbar */}
+
+      {/* Main Content */}
+
+      {/* Footer */}
+    </div>
+  );
 };
 
 export default Home;
