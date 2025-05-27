@@ -39,7 +39,17 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-
+        <div className="hidden md:flex space-x-8">
+          {navItems.map((item, key) => (
+            <a
+              key={key}
+              href={item.href}
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
         {/* Mobile Nav */}
       </div>
     </nav>
