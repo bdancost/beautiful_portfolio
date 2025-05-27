@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
+import { X, Menu } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -51,7 +52,17 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
         {/* Mobile Nav */}
+
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
         <div
           className={cn(
             "fixed inset-0 bg-background-blur-md z-40 flex flex-col items-center justify-center",
