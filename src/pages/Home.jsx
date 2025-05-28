@@ -13,7 +13,9 @@ const Home = () => {
       {/* Navbar */}
       <Navbar />
       {/* Main Content */}
-      <HeroSection />
+      <main>
+        <HeroSection />
+      </main>
       {/* Footer */}
     </div>
   );
