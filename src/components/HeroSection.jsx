@@ -22,9 +22,11 @@ const HeroSection = () => {
             Specializing in front-end development, I build interfaces that are
             both beautiful and functional.
           </p>
-          <a href="#projects" className="cosmic-button">
-            Explore Projects
-          </a>
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+            <a href="#projects" className="cosmic-button">
+              View My Work
+            </a>
+          </div>
         </div>
       </div>
     </section>
