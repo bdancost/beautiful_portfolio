@@ -15,7 +15,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.screenY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -46,7 +46,7 @@ const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-300"
+              className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
             </a>
@@ -65,14 +65,14 @@ const Navbar = () => {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/95 z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
-              ? "opacity-100 point-events-auto"
+              ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-x-8 text-xl">
+          <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
               <a
                 key={key}
