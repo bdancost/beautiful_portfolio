@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -96,6 +96,16 @@ const ProjectsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/bdancost"
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+          >
+            Check My Github <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>
