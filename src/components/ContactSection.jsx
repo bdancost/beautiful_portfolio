@@ -6,9 +6,38 @@ import {
   Twitter,
   Instagram,
   Twitch,
+  Send,
 } from "lucide-react";
 
+import { cn } from "@/lib/utils";
+import useToast from "@/hooks/use-toast";
+
 const ContactSection = () => {
+  const { toast } = useToast();
+
+  /*************  ✨ Windsurf Command ⭐  *************/
+  /**
+   * Handles the submission of the contact form.
+   *
+   * Prevents the default behavior of the form submission and instead,
+   * displays a toast notification with a success message after a 1.5
+   * second delay.
+   *
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
+   * @returns {void}
+   */
+  /*******  f389e33d-5508-4248-a9f9-72d43d4f1348  *******/
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setTimeout(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon",
+      });
+    }, 1500);
+  };
+
   return (
     <section id="contact" className="py-24 px-4 realtive bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -104,7 +133,10 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs"
+            onSubmit={handleSubmit}
+          >
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form className="space-y-6">
@@ -157,6 +189,15 @@ const ContactSection = () => {
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
+              <button
+                type="submit"
+                className={cn(
+                  "cosmic-button w-full flex items-center justify-center gap-2"
+                )}
+              >
+                Send Message
+                <Send size={16} />
+              </button>
             </form>
           </div>
         </div>
