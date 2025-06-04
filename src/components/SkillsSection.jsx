@@ -11,20 +11,20 @@ const skills = [
   { name: "Next.js", level: 30, category: "Frontend" },
 
   //Backend
-  { name: "Node.js", level: 80, category: "Backend" },
-  { name: "Express.js", level: 70, category: "Backend" },
-  { name: "MongoDB", level: 60, category: "Backend" },
-  { name: "PostgreSQL", level: 50, category: "Backend" },
-  { name: "GraphQL", level: 40, category: "Backend" },
-  { name: "Prisma", level: 30, category: "Backend" },
+  { name: "Node.js", level: 20, category: "Backend" },
+  { name: "Express.js", level: 10, category: "Backend" },
+  { name: "MongoDB", level: 10, category: "Backend" },
+  { name: "PostgreSQL", level: 30, category: "Backend" },
+  { name: "GraphQL", level: 10, category: "Backend" },
+  { name: "Prisma", level: 10, category: "Backend" },
 
   //Tools
   { name: "Git/GitHub", level: 90, category: "Tools" },
-  { name: "Docker", level: 70, category: "Tools" },
-  { name: "NPM", level: 60, category: "Tools" },
-  { name: "Vite", level: 40, category: "Tools" },
-  { name: "Figma", level: 30, category: "Tools" },
-  { name: "VS Code", level: 30, category: "Tools" },
+  { name: "Docker", level: 10, category: "Tools" },
+  { name: "NPM", level: 70, category: "Tools" },
+  { name: "Vite", level: 50, category: "Tools" },
+  { name: "Figma", level: 40, category: "Tools" },
+  { name: "VS Code", level: 80, category: "Tools" },
 
   //Languages
   { name: "English", level: 40, category: "Languages" },
