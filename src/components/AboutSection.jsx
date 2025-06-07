@@ -29,7 +29,7 @@ const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/CV_DanielF.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
