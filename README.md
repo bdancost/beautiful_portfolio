@@ -109,7 +109,3 @@ Este projeto está sob licença MIT.
 
 - [LinkedIn](https://www.linkedin.com/in/daniel-fernandes1988/)
 - Email: pr.danfc88@gmail.com
-
----
-
-> Feito com 💜 por Daniel Fernandes
